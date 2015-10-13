@@ -1,0 +1,8 @@
+<h2>Show album</h2>
+
+<ul>
+
+</ul>
+
+<%= link "Edit", to: album_path(@conn, :edit, @album) %>
+<%= link "Back", to: album_path(@conn, :index) %>
