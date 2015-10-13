@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PolymorphismTest
 
 To start your Phoenix app:
@@ -17,3 +18,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+=======
+# polymorphism_test
+test of polymorphic favoriting of multiple models in Phoenix Framework
+>>>>>>> ea7a1b3daedfae1cd65334dd3be695210dff7328
