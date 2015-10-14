@@ -1,14 +1,17 @@
 defmodule PolymorphismTest.Song do
   use PolymorphismTest.Web, :model
+  alias PolymorphismTest.Favorite
 
   schema "songs" do
     field :name, :string
-    belongs_to :album, PolymorphismTest.Album
+    field :track_number, :integer
 
+    belongs_to :album, PolymorphismTest.Album
+    has_many :favorites, {"song_favorites", Favorite}
     timestamps
   end
 
-  @required_fields ~w(name)
+  @required_fields ~w(name track_number)
   @optional_fields ~w()
 
   @doc """

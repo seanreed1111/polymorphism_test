@@ -1,12 +1,14 @@
 defmodule PolymorphismTest.Album do
   use PolymorphismTest.Web, :model
-
+  alias PolymorphismTest.Favorite
+  
   schema "albums" do
     field :name, :string
     field :added_on, Ecto.Date
+
     belongs_to :user, PolymorphismTest.User
     has_many :songs, PolymorphismTest.Song
-
+    has_many :favorites, {"album_favorites", Favorite}
     timestamps
   end
 

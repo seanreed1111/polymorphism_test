@@ -1,11 +1,12 @@
 defmodule PolymorphismTest.User do
   use PolymorphismTest.Web, :model
-
+  alias PolymorphismTest.Album
+  
   schema "users" do
     field :name, :string
     field :email, :string
 
-    has_many :albums, PolymorphismTest.Album
+    has_many :albums, Album
     timestamps
   end
 
